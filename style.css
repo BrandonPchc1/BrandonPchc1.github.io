@@ -1,0 +1,56 @@
+body{
+    background-color: black;
+    margin-top: 15vh;
+    height: 100vh;
+    padding-left: 40vh;
+    padding-right: 40vh;
+    overflow: hidden;
+    align-items: center;
+}
+.no-seleccionable {
+    -webkit-user-select: none; /* Safari y navegadores basados en WebKit */
+    -moz-user-select: none;    /* Firefox antiguos */
+    -ms-user-select: none;     /* Internet Explorer / Edge antiguos */
+    user-select: none;         /* Estándar moderno (Chrome, Edge, Firefox, Opera) */
+}
+img{
+    -webkit-user-select: none;
+    user-select: none;
+}
+.interfaz{
+    background-color: rgba(248, 247, 247, 0.2);
+    color: white;
+    text-align: center;
+    height: 60%;
+    align-items: center;
+    padding-top: 3vh;
+    border-radius: 5%;
+}
+.perfil{
+    width: 15vh;
+    height: 14vh;
+    
+}
+.titulo{
+    color: white;
+    font-size: 10vh;
+    transition: transform 0.2s ease;
+}
+.titulo:hover{
+    transform: scale(1.1);
+}
+.links{
+    height: 30vh;
+    align-items: center;
+    text-align: center;
+}
+.botones{
+    padding-left: 2%;
+    opacity: 0.7;
+    transition: transform 0.2s ease;
+    width: 6%;
+}
+.botones:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
