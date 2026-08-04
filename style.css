@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     margin-top: 15vh;
     height: 100vh;
     padding-left: 40vh;
@@ -18,7 +18,7 @@ img{
     user-select: none;
 }
 .interfaz{
-    background-color: rgba(248, 247, 247, 0.2);
+    background-color: rgba(255, 255, 255, 0.075);
     color: white;
     text-align: center;
     height: 60%;
@@ -53,4 +53,14 @@ img{
 .botones:hover{
     opacity: 1;
     transform: scale(1.1);
+}
+@keyframes parpadeo {
+    0%, 100% {
+        opacity: 1;
+        box-shadow: 0 0 20px 5px rgba(0, 150, 255, 0.8);
+    }
+    50% {
+        opacity: 0.3;
+        box-shadow: 0 0 5px 1px rgba(0, 150, 255, 0.4);
+    }
 }
