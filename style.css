@@ -1,11 +1,15 @@
+html, body {
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 body{
     background-color: rgb(0, 0, 0);
-    margin-top: 15vh;
-    height: 100vh;
-    padding-left: 40vh;
-    padding-right: 40vh;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 .no-seleccionable {
     -webkit-user-select: none; /* Safari y navegadores basados en WebKit */
@@ -24,16 +28,18 @@ img{
     height: 60%;
     align-items: center;
     padding-top: 3vh;
+    padding-bottom: 3vh;
     border-radius: 5%;
+    width: 50%;
 }
 .perfil{
-    width: 15vh;
-    height: 14vh;
+    width: 20vh;
+    height: 19vh;
     
 }
 .titulo{
     color: white;
-    font-size: 10vh;
+    font-size: 8vh;
     transition: transform 0.2s ease;
 }
 .titulo:hover{
@@ -48,7 +54,7 @@ img{
     padding-left: 2%;
     opacity: 0.7;
     transition: transform 0.2s ease;
-    width: 6%;
+    width: 7vh;
 }
 .botones:hover{
     opacity: 1;
@@ -62,5 +68,29 @@ img{
     50% {
         opacity: 0.3;
         box-shadow: 0 0 5px 1px rgba(0, 150, 255, 0.4);
+    }
+}
+@media (max-width: 667px) {
+    body {
+        overflow: hidden;
+        overscroll-behavior: none;
+        padding-left: 2vh;
+        padding-right: 2vh;
+    }
+    .interfaz{
+        width: 50vh;
+    }
+    .titulo {
+        font-size: 2.5rem;
+    }
+    
+    .perfil {
+        margin-top: 8vh;
+        width: 15vh;
+        height: 14vh;
+    }
+    
+    .botones {
+        width: 15%; /* más grande en móvil para que sea fácil tocar con el dedo */
     }
 }
